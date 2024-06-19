@@ -40,14 +40,34 @@ Route::middleware('splade')->group(function () {
     [\App\Http\Controllers\SubscriptionController::class, 'unsubscribe']
   )->name('unsubscribe');
 
-  Route::middleware('auth')->group(function () {
-    Route::get('/dashboard', function () {
-      return view('dashboard');
-    })->middleware(['verified'])->name('dashboard');
+  Route::post(
+    '/ask-me',
+    [\App\Http\Controllers\ContactController::class, 'store']
+  )->name('ask-me');
 
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+  Route::post(
+    '/get-quote',
+    [\App\Http\Controllers\QuoteController::class, 'store']
+  )->name('get-quote');
+
+  Route::middleware('auth')->group(function () {
+
+    Route::prefix('admin')->group(function () {
+
+      Route::get('queries', 'Admin\QueryController@index')->name('admin.queries.index');
+      Route::get('queries/{query}', 'Admin\QueryController@show')->name('admin.queries.show');
+      Route::post('queries/{query}/respond', 'Admin\QueryController@respond')->name('admin.queries.respond');
+
+      Route::get('/dashboard', function () {
+        return view('dashboard');
+      })->middleware(['verified'])->name('dashboard');
+
+      Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+      Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+      Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+    });
+
   });
 
   require __DIR__ . '/auth.php';

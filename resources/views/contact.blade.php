@@ -13,10 +13,10 @@
     <div
       class="uni-contact uk-section uk-section-large@m uk-panel uk-section-2xlarge uk-padding-2xlarge-bottom uk-panel uk-overflow-hidden dark:uk-background-gray-100">
 
-      <header class="mt-20 uni-page-header">
+      <header class="sm:mt-20 uni-page-header">
         <div class="uk-container">
-          <h1 class="heading uk-h3 uk-h1@m uk-text-capitalize uk-text-center">
-            Contact
+          <h1 class="heading uk-h2 uk-h1@m uk-text-capitalize uk-text-center@m">
+            Contact Me
           </h1>
         </div>
       </header>
@@ -34,25 +34,31 @@
 
               <div>
 
-                <header class="mb-6">
+                <header class="mb-6 uk-card uk-card-small uk-card-large@m">
 
-                  <h2 class="text-3xl">What are you interested in?</h2>
+                  <h2 class="text-3xl mb-2 sm:text-center">What are you interested in?</h2>
 
-                  <div class="flex items-center gap-4">
+                  <div class="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-2 sm:gap-4">
 
-                    <button @click="data.needQuote = false">
-                      <x-splade-radio
+                    <label class="flex items-center gap-2">
+                      <input
+                        type="radio"
                         v-model="data.needQuote"
-                        label="I have a question."
-                        value="data.needQuote" />
-                    </button>
+                        class="size-6 text-purple-600 bg-gray-100 border-gray-300 focus:ring-purple-500 dark:focus:ring-purple-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        :value="false" />
 
-                    <button @click="data.needQuote = true">
-                      <x-splade-radio
+                      <span>I have a question.</span>
+                    </label>
+
+                    <label class="flex items-center gap-2">
+                      <input
+                        type="radio"
                         v-model="data.needQuote"
-                        label="I need a quote."
-                        value="data.needQuote" />
-                    </button>
+                        class="size-6 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        :value="true" />
+
+                      <span>I need a quote.</span>
+                    </label>
 
                   </div>
 
@@ -62,41 +68,96 @@
                   class="uk-card uk-card-small uk-card-large@m uk-card-default uk-card-border uk-radius-medium uk-radius-large@m uk-position-z-index dark:uk-background-white-5">
 
                   <x-splade-form
-                    action="?"
+                    :action="route('get-quote')"
                     class="gap-6 uk-grid uk-grid-xsmall uk-child-width-1-1"
                     data-uk-grid
                     v-if="data.needQuote">
 
-                    {{-- <div class="uk-form-controls">
-                      <input v-model="form.name" class="rounded-lg uk-input uk-form-medium uk-text-bold" type="text" placeholder="Name">
-                    </div> --}}
-
-                    {{-- <div class="uk-form-controls">
+                    <div class="uk-form-controls">
                       <input
-                        v-model="form.email"
-                        class="rounded-lg uk-input uk-form-medium uk-text-bold"
-                        type="email" placeholder="Email">
-                    </div> --}}
+                        v-model="form.full_name"
+                        class="rounded-lg uk-input uk-form-large uk-text-bold"
+                        type="text" placeholder="Your full name">
 
-                    {{-- <div class="uk-form-controls">
-                      <input
-                        v-model="form.subject"
-                        class="rounded-lg uk-input uk-form-medium uk-text-bold"
-                        type="text" placeholder="Subject">
-                    </div> --}}
+                      <x-splade-errors>
+                        <p
+                          class="text-sm text-rose-600 font-semibold"
+                          v-if="errors.has('full_name')"
+                          v-text="errors.first('full_name')" />
+                      </x-splade-errors>
+                    </div>
 
                     <div class="uk-form-controls">
-                      <textarea
-                        class="rounded-lg uk-textarea uk-padding uk-height-xsmall uk-text-bold"
-                        rows="5" placeholder="Describe your project a bit thorough"></textarea>
+                      <input
+                        v-model="form.email"
+                        class="rounded-lg uk-input uk-form-large uk-text-bold"
+                        type="email" placeholder="Your email">
+
+                      <x-splade-errors>
+                        <p
+                          class="text-sm text-rose-600 font-semibold"
+                          v-if="errors.has('email')"
+                          v-text="errors.first('email')" />
+                      </x-splade-errors>
+                    </div>
+
+                    <div class="uk-form-controls">
+                      <input
+                        v-model="form.phone"
+                        class="rounded-lg uk-input uk-form-large uk-text-bold"
+                        type="tel" placeholder="Your mobile number">
+
+                      <x-splade-errors>
+                        <p
+                          class="text-sm text-rose-600 font-semibold"
+                          v-if="errors.has('phone')"
+                          v-text="errors.first('phone')" />
+                      </x-splade-errors>
+                    </div>
+
+                    <div class="uk-form-controls">
+                      <input
+                        v-model="form.project_title"
+                        class="rounded-lg uk-input uk-form-large uk-text-bold"
+                        type="text" placeholder="What will I work on?">
+
+                      <x-splade-errors>
+                        <p
+                          class="text-sm text-rose-600 font-semibold"
+                          v-if="errors.has('project_title')"
+                          v-text="errors.first('project_title')" />
+                      </x-splade-errors>
+                    </div>
+
+                    <div class="uk-form-controls">
+                      <input
+                        v-model="form.budget"
+                        class="rounded-lg uk-input uk-form-large uk-text-bold"
+                        type="text" placeholder="What's your budget">
+
+                      <x-splade-errors>
+                        <p
+                          class="text-sm text-rose-600 font-semibold"
+                          v-if="errors.has('budget')"
+                          v-text="errors.first('budget')" />
+                      </x-splade-errors>
+                    </div>
+
+                    <div class="uk-form-controls">
+                      <x-splade-textarea
+                        name="description"
+                        class="rounded-lg uk-text-bold"
+                        placeholder="Describe your project a bit thorough."
+                        autosize
+                        rows="5" />
                     </div>
 
                     <div class="uk-form-controls uk-flex-center">
 
                       <button
                         type="submit"
-                        class="uk-button uk-button-gradient uk-width-small@m uk-margin-auto">
-                        Send message
+                        class="uk-button uk-button-large uk-button-gradient uk-width-small@m uk-margin-auto">
+                        Get a quote
                       </button>
 
                     </div>
@@ -104,41 +165,82 @@
                   </x-splade-form>
 
                   <x-splade-form
-                    action=""
+                    :action="route('ask-me')"
                     class="gap-6 uk-grid uk-grid-xsmall uk-child-width-1-1"
                     data-uk-grid
                     v-else>
 
                     <div class="uk-form-controls">
-                      <input v-model="form.name" class="rounded-lg uk-input uk-form-medium uk-text-bold" type="text" placeholder="Name">
+                      <input
+                        v-model="form.full_name"
+                        class="rounded-lg uk-input uk-text-bold uk-form-large"
+                        type="text" placeholder="Enter your fullname">
+
+                      <x-splade-errors>
+                        <p
+                          v-if="errors.has('full_name')"
+                          v-text="errors.first('full_name')"
+                          class="text-rose-500 text-sm mt-1" />
+                      </x-splade-errors>
+
                     </div>
 
                     <div class="uk-form-controls">
                       <input
                         v-model="form.email"
-                        class="rounded-lg uk-input uk-form-medium uk-text-bold"
-                        type="email" placeholder="Email">
+                        class="rounded-lg uk-input uk-text-bold uk-form-large"
+                        type="email" placeholder="Enter your email address">
+
+                      <x-splade-errors>
+
+                        <p
+                          v-if="errors.has('email')"
+                          v-text="errors.first('email')"
+                          class="text-rose-500 text-sm mt-1" />
+
+                      </x-splade-errors>
+
                     </div>
 
                     <div class="uk-form-controls">
                       <input
                         v-model="form.subject"
-                        class="rounded-lg uk-input uk-form-medium uk-text-bold"
-                        type="text" placeholder="Subject">
+                        class="rounded-lg uk-input uk-text-bold uk-form-large"
+                        type="text" placeholder="What's your question about?">
+
+                      <x-splade-errors>
+
+                        <p
+                          v-if="errors.has('subject')"
+                          v-text="errors.first('subject')"
+                          class="text-rose-500 text-sm mt-1" />
+
+                      </x-splade-errors>
                     </div>
 
                     <div class="uk-form-controls">
                       <textarea
                         class="rounded-lg uk-textarea uk-padding uk-height-xsmall uk-text-bold"
-                        rows="5" placeholder="Type your message"></textarea>
+                        rows="5" v-model="form.message"
+                        placeholder="Type your question"></textarea>
+
+                      <x-splade-errors>
+
+                        <p
+                          v-if="errors.has('message')"
+                          v-text="errors.first('message')"
+                          class="text-rose-500 text-sm mt-1" />
+
+                      </x-splade-errors>
                     </div>
 
-                    <div class="uk-form-controls uk-flex-center">
+                    <div class="uk-form-controls">
 
                       <button
                         type="submit"
-                        class="uk-button uk-button-gradient uk-width-small@m uk-margin-auto">
-                        Send message
+                        class="uk-button uk-button-large uk-button-gradient uk-width-small@m uk-margin-auto">
+                        <x-tabler-send class="size-6" />
+                        <span>Ask me</span>
                       </button>
 
                     </div>

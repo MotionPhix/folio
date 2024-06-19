@@ -10,13 +10,13 @@
 
       <div class="uni-mobile-menu-content">
 
-        <header class="uk-card uk-card-2xsmall uk-flex-middle uk-flex-between">
+        <header class="uk-card uk-card-2xsmall flex items-center justify-between">
 
           <div class="uk-flex-1">
             <button
               aria-label="Close Menu"
-              class="uk-offcanvas-close uk-button uk-button-small uk-button-icon uk-button-default uk-button-outline uk-radius-circle" type="button">
-              <i class="uk-icon-small" data-feather="arrow-left"></i>
+              class="uk-offcanvas-close uk-button" type="button">
+              <x-tabler-arrow-left class="size-7" />
             </button>
           </div>
 

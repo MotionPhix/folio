@@ -1,4 +1,4 @@
-<p align="center"><a href="https://ultrashots.net" target="_blank"><img src="https://ultrashots.net/logo.png" width="400" alt="Ultrashots Logo"></a></p>
+<p align="center"><a href="https://ultrashots.net" target="_blank">Ultrashots</a></p>
 
 
 ## About Ultrashots

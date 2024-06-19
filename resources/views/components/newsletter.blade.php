@@ -21,7 +21,7 @@
           <div class="w-full flex flex-col">
             <input type="email"
             v-model="form.email" autocomplete="off"
-            class="relative uk-input uk-form-medium uk-form-large@m uk-width-large@m w-full rounded-full"
+            class="relative uk-input uk-form-large uk-width-large@m w-full rounded-full"
             placeholder="Your email..">
 
             <p

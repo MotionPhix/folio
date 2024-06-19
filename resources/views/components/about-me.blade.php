@@ -21,7 +21,7 @@
                   <span class="uk-text-overline uk-text-gradient">Create and Invest</span>
 
                   <h3 class="uk-h3 uk-h1@m uk-text-capitalize">
-                    Transforming ideas <span class="uk-text-gradient">into reality</span>
+                    Transforming ideas <br class="sm:hidden"> <span class="uk-text-gradient">into reality</span>
                   </h3>
 
                   <p class="uk-text-large@m mb-2">
@@ -34,7 +34,7 @@
 
                   <x-splade-link
                     href="#join_discrod"
-                    class="uk-button uk-button-medium uk-button-large@m uk-button-primary uk-button-outline uk-margin-small-top uk-margin-medium-top@m">
+                    class="uk-button uk-button-large uk-button-primary uk-button-outline uk-margin-small-top uk-margin-medium-top@m">
                     <span>Book me now</span>
 
                     <i class="uk-icon uk-text-bold unicon-arrow-right"></i>
