@@ -208,237 +208,44 @@
             <div class="swiper-dotnav uk-margin-top uk-visible@m"></div>
           </div>
         </div>
+
         <div class="uk-width-expand">
           <div class="swiper uk-offset-remove uk-offset@m uk-overflow-unset uk-overflow-hide@m" data-swiper="items: 1.1; gap: 15; center: true; center-bounds: true; loop: true; dots-type: fraction; disable-class: swiper-nav-hide;" data-swiper-m="items: 2; gap: 30; center: false; loop: true;">
             <div class="swiper-wrapper">
+
               <div class="swiper-slide">
+
                 <div>
-                  <div class="uk-grid-2xsmall uk-grid@m uk-grid" data-uk-grid="">
+
+                  <div class="uk-grid-2xsmall uk-grid@m uk-grid" data-uk-grid>
+
                     <div class="uk-width-3-5">
+
                       <div class="uk-card uk-panel">
+
                         <div class="uk-panel uk-overflow-hidden uk-radius-large">
+
                           <canvas width="263" height="394"></canvas>
-                          <img src="assets/images/collections/01.jpg" alt="Artwork" class="uk-cover" data-uk-cover="">
+
+                          <img src="assets/images/collections/01.jpg" alt="Artwork" class="uk-cover" data-uk-cover>
+
                         </div>
-                        <h2 class="uk-h3 uk-h2@s uk-position-center-right-out uk-padding-medium-left uk-padding-2xsmall-left@s uk-padding-large-left@m uk-offset-2xlarge-left uk-offset-large-left@m uk-position-z-index uk-text-uppercase uk-text-gray-100 dark:uk-text-gray-10">
-                          Steph <br>
-                          Jobs
+
+                        <h2
+                          class="uk-h3 uk-h2@s uk-position-center-right-out uk-padding-medium-left uk-padding-2xsmall-left@s uk-padding-large-left@m uk-offset-2xlarge-left uk-offset-large-left@m uk-position-z-index uk-text-gray-100 dark:uk-text-gray-10">
+                          Poster <br>
+                          <span class="uk-text-muted">Artworks</span>
                         </h2>
+
                       </div>
+
                     </div>
-                    <div class="uk-width-expand">
-                      <div class="uk-flex uk-flex-column uk-flex-between uk-height-1-1">
-                        <div class="uk-panel">
-                          <p class="uk-text-muted">Artist</p>
-                        </div>
-                        <div class="uk-panel uk-margin-bottom">
-                          <ul class="uk-subnav uk-subnav-xsmall uk-subnav-small@m">
-                            <li>
-                              <a href="https://twitter.com/unistudioco"><i class="uk-icon uk-icon-medium unicon-logo-twitter"></i></a>
-                            </li>
-                            <li>
-                              <a href="https://instagram.com/unistudioco"><i class="uk-icon uk-icon-medium unicon-logo-instagram"></i></a>
-                            </li>
-                            <li>
-                              <a href="https://discord.com/unistudioco"><i class="uk-icon uk-icon-medium unicon-logo-discord"></i></a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
+
                   </div>
                 </div>
+
               </div>
-              <div class="swiper-slide">
-                <div>
-                  <div class="uk-grid-2xsmall uk-grid@m uk-grid" data-uk-grid="">
-                    <div class="uk-width-3-5">
-                      <div class="uk-card uk-panel">
-                        <div class="uk-panel uk-overflow-hidden uk-radius-large">
-                          <canvas width="263" height="394"></canvas>
-                          <img src="assets/images/collections/02.jpg" alt="Artwork" class="uk-cover" data-uk-cover="">
-                        </div>
-                        <h2 class="uk-h3 uk-h2@s uk-position-center-right-out uk-padding-medium-left uk-padding-2xsmall-left@s uk-padding-large-left@m uk-offset-2xlarge-left uk-offset-large-left@m uk-position-z-index uk-text-uppercase uk-text-gray-100 dark:uk-text-gray-10">
-                          Andry <br>
-                          Morays
-                        </h2>
-                      </div>
-                    </div>
-                    <div class="uk-width-expand">
-                      <div class="uk-flex uk-flex-column uk-flex-between uk-height-1-1">
-                        <div class="uk-panel">
-                          <p class="uk-text-muted">Artist</p>
-                        </div>
-                        <div class="uk-panel uk-margin-bottom">
-                          <ul class="uk-subnav uk-subnav-xsmall uk-subnav-small@m">
-                            <li>
-                              <a href="https://twitter.com/unistudioco"><i class="uk-icon uk-icon-medium unicon-logo-twitter"></i></a>
-                            </li>
-                            <li>
-                              <a href="https://instagram.com/unistudioco"><i class="uk-icon uk-icon-medium unicon-logo-instagram"></i></a>
-                            </li>
-                            <li>
-                              <a href="https://discord.com/unistudioco"><i class="uk-icon uk-icon-medium unicon-logo-discord"></i></a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div>
-                  <div class="uk-grid-2xsmall uk-grid@m uk-grid" data-uk-grid="">
-                    <div class="uk-width-3-5">
-                      <div class="uk-card uk-panel">
-                        <div class="uk-panel uk-overflow-hidden uk-radius-large">
-                          <canvas width="263" height="394"></canvas>
-                          <img src="assets/images/collections/03.jpg" alt="Artwork" class="uk-cover" data-uk-cover="">
-                        </div>
-                        <h2 class="uk-h3 uk-h2@s uk-position-center-right-out uk-padding-medium-left uk-padding-2xsmall-left@s uk-padding-large-left@m uk-offset-2xlarge-left uk-offset-large-left@m uk-position-z-index uk-text-uppercase uk-text-gray-100 dark:uk-text-gray-10">
-                          Steve <br>
-                          Allan
-                        </h2>
-                      </div>
-                    </div>
-                    <div class="uk-width-expand">
-                      <div class="uk-flex uk-flex-column uk-flex-between uk-height-1-1">
-                        <div class="uk-panel">
-                          <p class="uk-text-muted">Artist</p>
-                        </div>
-                        <div class="uk-panel uk-margin-bottom">
-                          <ul class="uk-subnav uk-subnav-xsmall uk-subnav-small@m">
-                            <li>
-                              <a href="https://twitter.com/unistudioco"><i class="uk-icon uk-icon-medium unicon-logo-twitter"></i></a>
-                            </li>
-                            <li>
-                              <a href="https://instagram.com/unistudioco"><i class="uk-icon uk-icon-medium unicon-logo-instagram"></i></a>
-                            </li>
-                            <li>
-                              <a href="https://discord.com/unistudioco"><i class="uk-icon uk-icon-medium unicon-logo-discord"></i></a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div>
-                  <div class="uk-grid-2xsmall uk-grid@m uk-grid" data-uk-grid="">
-                    <div class="uk-width-3-5">
-                      <div class="uk-card uk-panel">
-                        <div class="uk-panel uk-overflow-hidden uk-radius-large">
-                          <canvas width="263" height="394"></canvas>
-                          <img src="assets/images/collections/04.jpg" alt="Artwork" class="uk-cover" data-uk-cover="">
-                        </div>
-                        <h2 class="uk-h3 uk-h2@s uk-position-center-right-out uk-padding-medium-left uk-padding-2xsmall-left@s uk-padding-large-left@m uk-offset-2xlarge-left uk-offset-large-left@m uk-position-z-index uk-text-uppercase uk-text-gray-100 dark:uk-text-gray-10">
-                          John <br>
-                          Clark
-                        </h2>
-                      </div>
-                    </div>
-                    <div class="uk-width-expand">
-                      <div class="uk-flex uk-flex-column uk-flex-between uk-height-1-1">
-                        <div class="uk-panel">
-                          <p class="uk-text-muted">Artist</p>
-                        </div>
-                        <div class="uk-panel uk-margin-bottom">
-                          <ul class="uk-subnav uk-subnav-xsmall uk-subnav-small@m">
-                            <li>
-                              <a href="https://twitter.com/unistudioco"><i class="uk-icon uk-icon-medium unicon-logo-twitter"></i></a>
-                            </li>
-                            <li>
-                              <a href="https://instagram.com/unistudioco"><i class="uk-icon uk-icon-medium unicon-logo-instagram"></i></a>
-                            </li>
-                            <li>
-                              <a href="https://discord.com/unistudioco"><i class="uk-icon uk-icon-medium unicon-logo-discord"></i></a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div>
-                  <div class="uk-grid-2xsmall uk-grid@m uk-grid" data-uk-grid="">
-                    <div class="uk-width-3-5">
-                      <div class="uk-card uk-panel">
-                        <div class="uk-panel uk-overflow-hidden uk-radius-large">
-                          <canvas width="263" height="394"></canvas>
-                          <img src="assets/images/collections/05.jpg" alt="Artwork" class="uk-cover" data-uk-cover="">
-                        </div>
-                        <h2 class="uk-h3 uk-h2@s uk-position-center-right-out uk-padding-medium-left uk-padding-2xsmall-left@s uk-padding-large-left@m uk-offset-2xlarge-left uk-offset-large-left@m uk-position-z-index uk-text-uppercase uk-text-gray-100 dark:uk-text-gray-10">
-                          Alfonso <br>
-                          Pedro
-                        </h2>
-                      </div>
-                    </div>
-                    <div class="uk-width-expand">
-                      <div class="uk-flex uk-flex-column uk-flex-between uk-height-1-1">
-                        <div class="uk-panel">
-                          <p class="uk-text-muted">Artist</p>
-                        </div>
-                        <div class="uk-panel uk-margin-bottom">
-                          <ul class="uk-subnav uk-subnav-xsmall uk-subnav-small@m">
-                            <li>
-                              <a href="https://twitter.com/unistudioco"><i class="uk-icon uk-icon-medium unicon-logo-twitter"></i></a>
-                            </li>
-                            <li>
-                              <a href="https://instagram.com/unistudioco"><i class="uk-icon uk-icon-medium unicon-logo-instagram"></i></a>
-                            </li>
-                            <li>
-                              <a href="https://discord.com/unistudioco"><i class="uk-icon uk-icon-medium unicon-logo-discord"></i></a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div>
-                  <div class="uk-grid-2xsmall uk-grid@m uk-grid" data-uk-grid="">
-                    <div class="uk-width-3-5">
-                      <div class="uk-card uk-panel">
-                        <div class="uk-panel uk-overflow-hidden uk-radius-large">
-                          <canvas width="263" height="394"></canvas>
-                          <img src="assets/images/collections/06.jpg" alt="Artwork" class="uk-cover" data-uk-cover="">
-                        </div>
-                        <h2 class="uk-h3 uk-h2@s uk-position-center-right-out uk-padding-medium-left uk-padding-2xsmall-left@s uk-padding-large-left@m uk-offset-2xlarge-left uk-offset-large-left@m uk-position-z-index uk-text-uppercase uk-text-gray-100 dark:uk-text-gray-10">
-                          Jasse <br>
-                          Davy
-                        </h2>
-                      </div>
-                    </div>
-                    <div class="uk-width-expand">
-                      <div class="uk-flex uk-flex-column uk-flex-between uk-height-1-1">
-                        <div class="uk-panel">
-                          <p class="uk-text-muted">Artist</p>
-                        </div>
-                        <div class="uk-panel uk-margin-bottom">
-                          <ul class="uk-subnav uk-subnav-xsmall uk-subnav-small@m">
-                            <li>
-                              <a href="https://twitter.com/unistudioco"><i class="uk-icon uk-icon-medium unicon-logo-twitter"></i></a>
-                            </li>
-                            <li>
-                              <a href="https://instagram.com/unistudioco"><i class="uk-icon uk-icon-medium unicon-logo-instagram"></i></a>
-                            </li>
-                            <li>
-                              <a href="https://discord.com/unistudioco"><i class="uk-icon uk-icon-medium unicon-logo-discord"></i></a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
             </div>
           </div>
 
