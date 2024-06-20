@@ -21,13 +21,13 @@ class QuoteController extends Controller
       'description' => 'required|min:50',
       'budget' => ['required', new NumbersOnly()],
     ], [
-      'full_name.required' => 'You need to tell me your name, boss.',
+      'full_name.required' => 'Tell me your name, boss.',
       'email.required' => 'Please enter your email address.',
       'email.email' => 'You entered an invalid email address.',
       'phone.required' => 'Please enter your phone number.',
       'project_title.required' => 'Let me know what you want me to work on.',
-      'description.required' => 'Please provide a description for the job',
-      'description.min' => 'Please explain the job in detail.',
+      'description.required' => 'Provide a description for your job',
+      'description.min' => 'Please explain your job in detail.',
       'budget.required' => 'Suggest your budget constraints',
     ]);
 

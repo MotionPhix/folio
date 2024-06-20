@@ -13,7 +13,9 @@
 
   <p>Dear {{ $user->email }},</p>
 
-  <p>Thank you for subscribing to our newsletter. Please click the link below to confirm your subscription:</p>
+  <p>
+    Thank you for subscribing to my newsletter. Please click the link below to confirm your subscription:
+  </p>
 
   <p><a href="{{ $confirmationUrl }}">Confirm Subscription</a></p>
 

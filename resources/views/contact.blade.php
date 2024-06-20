@@ -36,15 +36,15 @@
 
                 <header class="mb-6 uk-card uk-card-small uk-card-large@m">
 
-                  <h2 class="text-3xl mb-2 sm:text-center">What are you interested in?</h2>
+                  <h2 class="mb-2 text-3xl sm:text-center">What are you interested in?</h2>
 
-                  <div class="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-2 sm:gap-4">
+                  <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-center sm:gap-4">
 
                     <label class="flex items-center gap-2">
                       <input
                         type="radio"
                         v-model="data.needQuote"
-                        class="size-6 text-purple-600 bg-gray-100 border-gray-300 focus:ring-purple-500 dark:focus:ring-purple-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        class="text-purple-600 bg-gray-100 border-gray-300 size-6 focus:ring-purple-500 dark:focus:ring-purple-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                         :value="false" />
 
                       <span>I have a question.</span>
@@ -54,7 +54,7 @@
                       <input
                         type="radio"
                         v-model="data.needQuote"
-                        class="size-6 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        class="text-green-600 bg-gray-100 border-gray-300 size-6 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                         :value="true" />
 
                       <span>I need a quote.</span>
@@ -81,7 +81,7 @@
 
                       <x-splade-errors>
                         <p
-                          class="text-sm text-rose-600 font-semibold"
+                          class="text-sm font-semibold text-rose-600"
                           v-if="errors.has('full_name')"
                           v-text="errors.first('full_name')" />
                       </x-splade-errors>
@@ -95,7 +95,7 @@
 
                       <x-splade-errors>
                         <p
-                          class="text-sm text-rose-600 font-semibold"
+                          class="text-sm font-semibold text-rose-600"
                           v-if="errors.has('email')"
                           v-text="errors.first('email')" />
                       </x-splade-errors>
@@ -109,7 +109,7 @@
 
                       <x-splade-errors>
                         <p
-                          class="text-sm text-rose-600 font-semibold"
+                          class="text-sm font-semibold text-rose-600"
                           v-if="errors.has('phone')"
                           v-text="errors.first('phone')" />
                       </x-splade-errors>
@@ -123,7 +123,7 @@
 
                       <x-splade-errors>
                         <p
-                          class="text-sm text-rose-600 font-semibold"
+                          class="text-sm font-semibold text-rose-600"
                           v-if="errors.has('project_title')"
                           v-text="errors.first('project_title')" />
                       </x-splade-errors>
@@ -137,7 +137,7 @@
 
                       <x-splade-errors>
                         <p
-                          class="text-sm text-rose-600 font-semibold"
+                          class="text-sm font-semibold text-rose-600"
                           v-if="errors.has('budget')"
                           v-text="errors.first('budget')" />
                       </x-splade-errors>
@@ -180,7 +180,7 @@
                         <p
                           v-if="errors.has('full_name')"
                           v-text="errors.first('full_name')"
-                          class="text-rose-500 text-sm mt-1" />
+                          class="mt-1 text-sm text-rose-500" />
                       </x-splade-errors>
 
                     </div>
@@ -196,7 +196,7 @@
                         <p
                           v-if="errors.has('email')"
                           v-text="errors.first('email')"
-                          class="text-rose-500 text-sm mt-1" />
+                          class="mt-1 text-sm text-rose-500" />
 
                       </x-splade-errors>
 
@@ -213,7 +213,7 @@
                         <p
                           v-if="errors.has('subject')"
                           v-text="errors.first('subject')"
-                          class="text-rose-500 text-sm mt-1" />
+                          class="mt-1 text-sm text-rose-500" />
 
                       </x-splade-errors>
                     </div>
@@ -229,7 +229,7 @@
                         <p
                           v-if="errors.has('message')"
                           v-text="errors.first('message')"
-                          class="text-rose-500 text-sm mt-1" />
+                          class="mt-1 text-sm text-rose-500" />
 
                       </x-splade-errors>
                     </div>
@@ -259,7 +259,7 @@
 
                     <div class="uk-panel">
 
-                      <h2 class="uk-h5 uk-h4@m">Got a question?</h2>
+                      <h2 class="uk-h5 uk-h4@m">Got a suggestion?</h2>
 
                       <p>
                         You can reach me via the following phone number or email address. Don't forget
