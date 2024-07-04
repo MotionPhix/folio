@@ -234,7 +234,7 @@
                 <div class="uk-card uk-card-2xsmall uk-card-default uk-radius-xlarge dark:uk-background-white-10">
                   <div class="uk-panel uk-overflow-hidden uk-radius-large">
                     <canvas width="400" height="600"></canvas>
-                    <img src="assets/images/collections/01.jpg" alt="Artwork" class="uk-cover" data-uk-cover>
+                    <img src="assets/images/collections/art-05.png" alt="Artwork" class="uk-cover" data-uk-cover>
                   </div>
                 </div>
               </div>
